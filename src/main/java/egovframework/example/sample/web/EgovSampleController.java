@@ -81,7 +81,9 @@ public class EgovSampleController {
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model)
 			throws Exception {
 
-		throw new RuntimeException();
+		if (true) {
+			throw new RuntimeException();
+		}
 		/** EgovPropertyService.sample */
 		searchVO.setPageUnit(propertiesService.getInt("pageUnit"));
 		searchVO.setPageSize(propertiesService.getInt("pageSize"));
