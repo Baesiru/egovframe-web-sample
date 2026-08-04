@@ -162,11 +162,6 @@ public class EgovSampleController {
 	@GetMapping("/updateSampleView.do")
 	public String updateSampleView(@RequestParam("selectedId") String id,
 			@ModelAttribute("searchVO") SampleDefaultVO searchVO, Model model) throws Exception {
-		if (true) {
-			throw new RuntimeException();
-
-		}
-
 		SampleVO sampleVO = new SampleVO();
 		sampleVO.setId(id);
 		// 변수명은 CoC 에 따라 sampleVO
